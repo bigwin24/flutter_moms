@@ -45,3 +45,7 @@ app.*.map.json
 
 #ENV
 *.env
+
+# APP
+android
+ios
