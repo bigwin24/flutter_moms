@@ -5,6 +5,6 @@ class SignUpScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text('가입');
+    return const Text('가입');
   }
 }

@@ -8,8 +8,8 @@ class HomeScreen extends StatelessWidget {
     return MaterialApp(
       title: 'HOME',
       home: Scaffold(
-        appBar: AppBar(title: Text('HOME'),),
-        body: Center(
+        appBar: AppBar(title: const Text('HOME'),),
+        body: const Center(
           child: Text('HOME CONTENT'),
         ),
       ),

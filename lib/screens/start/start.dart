@@ -13,27 +13,22 @@ class _StartScreenState extends State<StartScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return
-      Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Colors.orange,
-              Colors.white,
-            ],
-          ),
+    return Container(
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Colors.orange,
+            Colors.white,
+          ],
         ),
-        child: Center(
-          child: Column(
-            children: [
-              Text(foo),
-              const Text('맘스타트 하나로 끝'),
-            ],
-          ),
+      ),
+      child: Center(
+        child: Column(
+          children: [Text(foo)],
         ),
-      );
+      ),
+    );
   }
 }
-

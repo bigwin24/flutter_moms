@@ -37,9 +37,9 @@ class AuthState extends ChangeNotifier {
     print('token1');
     // fetch user info
     final data = await fetchData();
-    print('data ${data}');
+    print('data $data');
     if (data != null) {
-      print('data44 ${data}');
+      print('data44 $data');
       storage.write(key: 'ACCESS_TOKEN', value: data['access_token']);
       storage.write(key: 'REFRESH_TOKEN', value: data['refresh_token']);
       return true; // has a login record.
@@ -63,7 +63,7 @@ class AuthState extends ChangeNotifier {
       }
       return false;
     } catch (e) {
-      print('error: ${e}');
+      print('error: $e');
     }
   }
 }
